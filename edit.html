@@ -1,0 +1,24 @@
+
+<head>
+  <style>
+    label{
+      margin:10px;
+      width:130px;
+      color:blue;
+      font-size:20px;
+    }
+    input{
+    padding:10px;
+    margin:20px;
+    }
+  </style>
+  
+</head>
+  <body>
+    <h2>Edit</h2>
+    <form>
+      <label >Description:</label><input type="text" ng-model="desc"><br/>
+      <label >Amount:</label><input type="text" ng-model="amount">
+      <a href='#orderdetail' class="btn btn-default" ng-click="edit()">Done</a>
+    </form>
+  </body>
