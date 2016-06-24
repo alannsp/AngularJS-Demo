@@ -12,7 +12,7 @@
             <th>Delete</th>
             <th>Edit</th>
           </tr>
-          <tr ng-repeat="record in info |orderBy:myOrder | filter:'search' track by $index">
+          <tr ng-repeat="record in info | orderBy:myOrder | filter:search track by $index">
             <td>{{record.id}}</td>
             <td>{{record.description}}</td>
             <td>{{record.amount}}</td>
