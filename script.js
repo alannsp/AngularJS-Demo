@@ -32,6 +32,9 @@ app.controller("deletecntrl",function($scope,$rootScope){
       $rootScope.info.splice(index,1);
       alert("Data deleted successfully");
       }
+	$scope.orderByMe = function(x) {
+    $scope.myOrder = x;
+	}
     $scope.hold=function(record){
       $rootScope.temp=record;
     }
