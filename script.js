@@ -27,7 +27,7 @@ app.controller("listcntrl", function($scope, $http, $rootScope) {
   })
 })
 app.controller("deletecntrl",function($scope,$rootScope){
-	$rootScope.showimage=false;
+
     $scope.delete=function(record){
       var index=$rootScope.info.indexOf(record);
       $rootScope.info.splice(index,1);
@@ -42,7 +42,6 @@ app.controller("deletecntrl",function($scope,$rootScope){
      
 })
 app.controller("newcntrl",function($scope,$rootScope){
-  $rootScope.showimage=false;
   $scope.new=function(){
     var index=$rootScope.info.length;
     var newid=$rootScope.info[index-1].id+1;

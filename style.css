@@ -7,7 +7,6 @@
 .menu{
 	display:incline-block;
 	color:white;
-	float:left;
 }
 .list{
 	padding:10px;
@@ -25,7 +24,7 @@
 .image{
 	float:left;
 }
-.blc::after{
-	content:"";
-	clear:both;
+aside{
+	background:green;
+	width:30%;
 }
