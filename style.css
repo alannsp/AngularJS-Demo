@@ -6,7 +6,6 @@
 }
 .menu{
 	display:incline-block;
-	color:white;
 }
 .list{
 	padding:10px;
@@ -15,16 +14,10 @@
 	font-size:25px;
 	text-decoration:none;
 	background: LightBlue;
+	color:white;
 	margin:10px;
 	padding:10px;
 }
 .menu a:hover{
 	background: DeepSkyBlue;
-}
-.image{
-	float:left;
-}
-aside{
-	background:green;
-	width:30%;
 }
