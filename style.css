@@ -13,11 +13,11 @@
 .menu a {
 	font-size:25px;
 	text-decoration:none;
-	background: Blue;
+	background: DeepSkyBlue;
 	color:white;
 	margin:10px;
 	padding:10px;
 }
 .menu a:hover{
-	background: DeepSkyBlue;
+	background: blue;
 }
