@@ -22,11 +22,13 @@ function($routeProvider){
 }])
 
 app.controller("listcntrl", function($scope, $http, $rootScope) {
+  $rootScope.temp=true;
   $http.get("data.json").success(function(data) {
       $rootScope.info = data;
   })
 })
 app.controller("deletecntrl",function($scope,$rootScope){
+	$rootScope.temp=false;
     $scope.delete=function(record){
       var index=$rootScope.info.indexOf(record);
       $rootScope.info.splice(index,1);
@@ -41,6 +43,7 @@ app.controller("deletecntrl",function($scope,$rootScope){
      
 })
 app.controller("newcntrl",function($scope,$rootScope){
+	$rootScope.temp=false;
   $scope.new=function(){
     var index=$rootScope.info.length;
     var newid=$rootScope.info[index-1].id+1;
@@ -51,6 +54,7 @@ app.controller("newcntrl",function($scope,$rootScope){
 })
 
 app.controller("editcntrl",function($scope,$rootScope){
+  $rootScope.temp=false;
   $scope.desc=$rootScope.temp.description;
   $scope.amount=$rootScope.temp.amount;
   $scope.edit=function(){

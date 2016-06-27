@@ -5,22 +5,32 @@
     <script data-require="angular.js@1.5.3" data-semver="1.5.3" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
     <script data-require="angular-route@*" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular-route.js"></script>
     <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+	<link rel="stylesheet" href="style.css"/>
     <script src="script.js"></script>
   </head>
 
   <body ng-controller="listcntrl">
-    <h1 style="background-color:blue;color:white;padding:30px">order management</h1>
+    <h1 class='header'>order management</h1>
 
-    <div>
-      <a href="#orderdetail" style="font-size:25px" class="btn btn-default">My orders</a>
+    <div class='menu'>
+		<div class='list'>
+		<a href="#orderdetail">My orders</a>
+		</div>
+		<div class='list'>
+		<a href="#new">new order</a>
+		</div>
     </div>
-    <br/>
-    <div>
-      <a href="#new" style="font-size:25px" class="btn btn-default">new order</a>
-    </div>
-
-    <div ng-view>
-    </div>
+	<div ng-show="temp">
+			<div class="image">
+			<img src="info.png" width="640" height="445"/>
+			</div>
+			<aside>
+			<h3>This is a AngularJS-demo </h3>
+			<p>This application allows the user to add, update, delete orders</p>
+			</aside>
+	</div>
+			<div ng-view>
+			</div>
   </body>
 
 </html>
