@@ -43,7 +43,7 @@ app.controller("deletecntrl",function($scope,$rootScope){
      
 })
 app.controller("newcntrl",function($scope,$rootScope){
-	$rootScope.temp=false;
+  $rootScope.temp=false;
   $scope.new=function(){
     var index=$rootScope.info.length;
     var newid=$rootScope.info[index-1].id+1;

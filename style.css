@@ -25,3 +25,7 @@
 .image{
 	float:left;
 }
+.blc::after{
+	content:"";
+	clear:both;
+}
